@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+    <script>
+        function produs(){
+            let x = document.getElementById('1');
+            let y = x.value;
+            y = Number(y);
+
+            let x1 = document.getElementById('2');
+            let y1 = x1.value;
+            y1 = Number(y1);
+
+            let tag_result = document.getElementById('3');
+            tag_result.innerHTML = String(y * y1);
+        }
+
+        function impartire(){
+          let primul1 = document.getElementById('1');
+          let ceva = primul1.value;
+          ceva = Number(ceva);
+
+          let primul2 = document.getElementById('2');
+          let ceva1 = primul2.value;
+          ceva1 = Number(ceva1);
+
+          let tag_result1 = document.getElementById('3');
+          tag_result1.innerHTML = String(ceva / ceva1);
+        }
+
+        function adunare(){
+            let x = document.getElementById('1');
+            let y = x.value;
+            y = Number(y);
+
+            let x1 = document.getElementById('2');
+            let y1 = x1.value;
+            y1 = Number(y1);
+
+            let tag_res = document.getElementById('3');
+            tag_res.innerHTML = String(y + y1);
+        
+
+        }
+        
+        function scadere(){
+            let x = Number(document.getElementById('1').value)
+            let k = Number(document.getElementById('2').value)
+            let res = x - k
+
+            document.getElementById('3').innerHTML = String(res)
+        }
+
+    </script>
+</head>
+<body>
+
+<p>primul numar</p>
+<br>
+<input id = '1'>
+<br>
+<br>
+<p>al doilea numar</p>
+<br>
+<input id = '2'>
+<br>
+<br>
+<button onclick = "produs()">*</button>
+<button onclick = "impartire()">/</button>
+<button onclick = "adunare()">+</button>
+<button onclick = "scadere()">-</button>
+<br>
+<br>
+<p id = '3'>afisas</p>
+</body>
+</html>

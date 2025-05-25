@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+        function run() {
+            let x =  document.getElementById('1');
+            let y = x.value;
+            y = Number(y);
+            y++;
+            
+            let tag_result = document.getElementById('2');
+            tag_result.innerHTML = String(y);
+
+        }
+    </script>
+</head>
+<body>
+
+<p>marim valoarea cu 1</p>
+<input id = '1'>
+<br>
+<br>
+<button onclick = "run()">Run!</button>
+<p id = '2'>AICI!</p>
+
+</body>
+</html>
